@@ -83,9 +83,11 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
 
 .foot-legal {
   max-width: var(--w); margin: 0 auto;
-  padding: 0 4px 28px;
+  padding: 20px 4px 28px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
   font-size: 13px; color: rgba(253, 251, 247, 0.4);
 }
+.foot-legal .tagline { font-family: var(--serif); font-size: 14px; }
 
 /* big mark: fades in from transparent at the top to 5% at the bottom */
 .foot-mark { max-width: var(--w); margin: 0 auto; padding-bottom: 24px; }
@@ -111,5 +113,6 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
 
   footer { padding: 36px 16px 0; }
   .foot-links { flex-direction: column; gap: 16px; padding-bottom: 28px; }
+  .foot-legal { flex-direction: column-reverse; gap: 8px; padding-top: 16px; }
   .foot-col { gap: 18px; }
 }
