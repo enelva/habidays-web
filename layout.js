@@ -26,8 +26,11 @@
           '<a href="/terms">Terms of service</a>' +
         '</div>' +
       '</div></div>' +
-      '<div class="foot-legal">© ' + year + ' Habidays</div>' +
       '<div class="foot-mark"><img src="/logotype-light.svg" alt=""></div>' +
+      '<div class="foot-legal">' +
+        '<span>© ' + year + ' Habidays</span>' +
+        '<span class="tagline">Habits, gradually.</span>' +
+      '</div>' +
     '</footer>';
 
   document.body.insertAdjacentHTML('afterbegin', nav);
