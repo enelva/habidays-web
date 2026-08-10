@@ -3,6 +3,7 @@
 (function () {
   var page = document.body.getAttribute('data-page') || '';
   var on = function (name) { return page === name ? ' class="active"' : ''; };
+  var year = new Date().getFullYear();
 
   var nav =
     '<div class="nav-outer"><nav class="nav">' +
@@ -25,6 +26,7 @@
           '<a href="/terms">Terms of service</a>' +
         '</div>' +
       '</div></div>' +
+      '<div class="foot-legal">© ' + year + ' Habidays</div>' +
       '<div class="foot-mark"><img src="/logotype-light.svg" alt=""></div>' +
     '</footer>';
 
