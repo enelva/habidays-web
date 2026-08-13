@@ -13,32 +13,100 @@
     <div class="wrap">
       <h1>Support</h1>
       <p class="lead">
-        Something not working, or a question about your account?
-        We're a small operation, so you'll get a real reply — usually within a day or two.
+        Whether you're setting up your first habit, can't get into your account,
+        or just want to know how something works, we're happy to help.
+        Send us a note and you'll get a real reply, usually within a day or two.
       </p>
 
       <div class="card">
         <p>
           <strong>Email us</strong><br>
-          <a href="mailto:hello@habidays.com">hello@habidays.com</a>
+          <a href="mailto:hello.habidays@gmail.com">hello.habidays@gmail.com</a>
         </p>
       </div>
 
-      <h2>Can't access your email?</h2>
-      <p>
-        If you've lost access to the email address on your account and can't change it
-        in the app, get in touch and we'll help you sort it out.
-      </p>
+      <h2>Frequently asked questions</h2>
 
-      <h2>Deleting your account</h2>
-      <p>
-        You can delete your account and your whole journal from inside the app:
-        open the menu, go to Account settings, and choose Delete account.
-        This removes everything, on your device and in the cloud, and can't be undone.
-      </p>
+      <div class="faq">
+        <button class="faq-q" aria-expanded="false">
+          <span>I've lost access to my email address</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a">
+          <p>
+            If you can't read the email on your account, you won't be able to change it
+            in the app on your own. Get in touch from any address and we'll help you
+            move your account across.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-q" aria-expanded="false">
+          <span>I forgot my password</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a">
+          <p>
+            On the login screen, tap "Forgot your password?" and enter your email.
+            We'll send you a code, and once you've entered it you can choose a new password.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-q" aria-expanded="false">
+          <span>Do I need an account to use Habidays?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a">
+          <p>
+            No. You can use Habidays without one, and your journal stays on your device.
+            Creating an account backs it up and keeps it in sync if you use more than one
+            device, and you can do that at any time without losing what you've tracked.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-q" aria-expanded="false">
+          <span>My verification code hasn't arrived</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a">
+          <p>
+            Check your spam folder first, since that's usually where it is.
+            If it still hasn't turned up after a few minutes, tap "Send a new code"
+            and we'll try again.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-q" aria-expanded="false">
+          <span>How do I delete my account?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-a">
+          <p>
+            Open the menu, go to Account settings, and choose Delete account.
+            You'll need your password and you'll be asked to confirm.
+            This removes your account and everything you've tracked, on your device
+            and in the cloud, and it can't be undone.
+          </p>
+        </div>
+      </div>
     </div>
   </main>
 
   <script src="/layout.js"></script>
+  <script>
+    document.querySelectorAll('.faq-q').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      });
+    });
+  </script>
 </body>
 </html>
