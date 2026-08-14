@@ -219,28 +219,37 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
   display: block; border-radius: 16px;
 }
 
-/* ---------- pro ---------- */
-.pro-list { list-style: none; padding: 0; margin: 28px 0 40px; }
-.pro-list li {
-  position: relative; padding-left: 32px; margin-bottom: 14px;
-  color: var(--ink);
+/* ---------- what's included ---------- */
+.included { padding-bottom: 24px; }
+.incl-table { margin-top: 32px; border-top: 1px solid var(--line-soft); }
+.incl-head, .incl-row {
+  display: grid; grid-template-columns: 1fr 80px 80px;
+  align-items: center; gap: 12px;
+  padding: 14px 4px; border-bottom: 1px solid var(--line-soft);
 }
-.pro-list li::before {
-  content: ''; position: absolute; left: 0; top: 4px;
-  width: 18px; height: 18px; border-radius: 50%;
-  border: 1.5px solid #4A8C56;
+.incl-head { font-size: 13px; color: var(--muted); padding: 10px 4px; }
+.incl-head span:not(:first-child),
+.incl-row span:not(:first-child) { text-align: center; }
+.incl-row span:first-child { color: var(--ink); }
+
+.tick { position: relative; display: inline-block; width: 18px; height: 18px; }
+.tick::before {
+  content: ''; position: absolute; inset: 0;
+  border: 1.5px solid #4A8C56; border-radius: 50%;
 }
-.pro-list li::after {
-  content: ''; position: absolute; left: 6px; top: 9px;
+.tick::after {
+  content: ''; position: absolute; left: 6px; top: 4px;
   width: 5px; height: 9px;
   border-right: 1.5px solid #4A8C56; border-bottom: 1.5px solid #4A8C56;
   transform: rotate(45deg);
 }
 
+/* ---------- pricing ---------- */
+.pricing { padding-top: 56px; }
 .plan-toggle {
   display: inline-flex; gap: 4px; padding: 4px;
   background: var(--card); border: 1px solid var(--line);
-  border-radius: 999px; margin-bottom: 24px;
+  border-radius: 999px; margin: 8px 0 24px;
 }
 .plan-btn {
   border: 0; background: none; cursor: pointer;
@@ -257,8 +266,7 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
 .plan-pro { border-color: var(--ink); }
 .plan h3 { margin: 0 0 8px; }
 .plan-price {
-  font-family: var(--serif); font-size: 34px; color: var(--ink);
-  margin: 0 0 8px;
+  font-family: var(--serif); font-size: 34px; color: var(--ink); margin: 0 0 8px;
 }
 .plan-star { font-size: 18px; vertical-align: super; color: var(--muted); }
 .plan-note { font-size: 14px; margin: 0; }
@@ -267,9 +275,8 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
 /* ---------- dark CTA ---------- */
 .cta-dark {
   background: var(--ink); color: rgba(253,251,247,.7);
-  margin-top: 88px; padding: 72px 0;
+  border-radius: 20px; padding: 56px 40px; margin-top: 32px;
 }
-.cta-dark .wrap { padding-top: 0; padding-bottom: 0; }
 .cta-dark h2 { color: #FDFBF7; margin-top: 0; }
 .cta-dark a { color: #FDFBF7; }
 
