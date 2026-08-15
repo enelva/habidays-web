@@ -328,3 +328,38 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
 @media (max-width: 640px) {
   .cta-dark { padding: 40px 24px; }
 }
+
+/* ---------- badges ---------- */
+.badge {
+  display: inline-block; border-radius: 999px;
+  padding: 3px 12px; font-size: 13px; font-weight: 600;
+  line-height: 1.5;
+}
+.badge-pro { background: var(--ink); color: var(--page); }
+.badge-free { background: var(--page-deep); color: var(--ink); border: 1px solid var(--line); }
+
+/* header cells line up with the ticks below */
+.incl-head span:not(:first-child),
+.incl-row span:not(:first-child) {
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* better balanced tick */
+.tick::after {
+  left: 5px; top: 5px;
+  width: 5px; height: 8px;
+  border-right-width: 2px; border-bottom-width: 2px;
+}
+
+/* ---------- plan card tweaks ---------- */
+.plan .badge { margin-bottom: 12px; }
+.plan-per {
+  font-family: var(--sans); font-size: 14px; font-weight: 400;
+  color: var(--ink);
+}
+
+/* ---------- store buttons ---------- */
+.store-btn { display: inline-block; }
+.store-btn img { height: 48px; display: block; }
+
+.quotes .lead { margin-bottom: 28px; }
