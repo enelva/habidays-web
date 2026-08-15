@@ -115,11 +115,10 @@
         for people who want to look deeper and make it their own.
       </p>
 
-      <div class="incl-table">
-        <div class="incl-head">
+      <div class="incl-head">
           <span></span>
-          <span>Free</span>
-          <span>Pro</span>
+          <span><span class="badge badge-free">Free</span></span>
+          <span><span class="badge badge-pro">Pro</span></span>
         </div>
 
         <div class="incl-row"><span>Full history, as far back as you've tracked</span><span class="tick"></span><span class="tick"></span></div>
@@ -142,20 +141,20 @@
       <div class="pricing-head">
         <h2>Pricing</h2>
           <div class="plan-toggle">
-            <button class="plan-btn active" data-period="monthly">Monthly</button>
-            <button class="plan-btn" data-period="yearly">Yearly</button>
+            <button class="plan-btn" data-period="monthly">Monthly</button>
+        <button class="plan-btn active" data-period="yearly">Yearly</button>
           </div>
         </div>
 
       <div class="plans">
         <div class="plan">
-          <h3>Free</h3>
-          <p class="plan-price">0 kr</p>
+          <span class="badge badge-free">Free</span>
+          <p class="plan-price">0 kr<span class="plan-per"> / month</span></p>
           <p class="plan-note">Everything you need to keep a journal.</p>
         </div>
         <div class="plan plan-pro">
-          <h3>Pro</h3>
-          <p class="plan-price"><span id="proPrice">XX</span> kr<span class="plan-star">*</span></p>
+          <span class="badge badge-pro">Pro</span>
+          <p class="plan-price"><span id="proPrice">YY</span> kr<span class="plan-star">*</span><span class="plan-per"> / month</span></p>
           <p class="plan-note">Everything in Free, plus the extras above.</p>
         </div>
       </div>
@@ -173,8 +172,8 @@
           and we'll send you an invite.
         </p>
         <div class="cta-row">
-          <a href="#" class="btn btn-store">App Store</a>
-          <a href="#" class="btn btn-store">Google Play</a>
+          <a href="#" class="store-btn"><img src="/assets/app-store.svg" alt="Download on the App Store"></a>
+          <a href="#" class="store-btn"><img src="/assets/google-play.svg" alt="Get it on Google Play"></a>
         </div>
       </div>
     </section>
@@ -182,6 +181,7 @@
     <!-- social proof -->
     <section class="wrap quotes">
       <h2>Don't take our word for it</h2>
+      <p class="lead">This is what some of our beta users think about the app.</p>
       <div class="quote-grid">
         <div class="quote-col">
           <div class="quote-card">
