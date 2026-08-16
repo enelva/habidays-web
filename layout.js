@@ -41,6 +41,7 @@ var social = [
         '<span>© ' + year + ' Habidays</span>' +
         '<a href="/privacy">Privacy policy</a>' +
         '<a href="/terms">Terms of service</a>' +
+       '<a href="/cookies">Cookie policy</a>' +
       '</div>' +
     '</footer>';
 
