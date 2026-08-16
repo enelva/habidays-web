@@ -346,3 +346,17 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
 .store-btn img { height: 48px; display: block; }
 
 .quotes .lead { margin-bottom: 28px; }
+
+/* ---------- legal pages ---------- */
+.legal .meta { margin-top: -8px; margin-bottom: 20px; }
+.legal-card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 16px; padding: 32px; margin-top: 20px;
+}
+.legal-card h2 { margin-top: 0; }
+.legal-card h3 { font-size: 16px; margin-top: 28px; }
+.legal-card > *:last-child { margin-bottom: 0; }
+
+@media (max-width: 640px) {
+  .legal-card { padding: 24px 22px; }
+}
