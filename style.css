@@ -361,9 +361,9 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
   .legal-card { padding: 24px 22px; }
 }
 
-.legal-rule {
+hr .legal-rule {
   border: 0; border-top: 1px solid var(--line);
-  margin: 32px 0 4px;
+  margin: 32px 0 32px;
 }
 
 /* square bullets, echoing the habit grid */
