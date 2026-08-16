@@ -360,3 +360,18 @@ footer { background: var(--ink); color: rgba(253, 251, 247, 0.7); padding: 48px 
 @media (max-width: 640px) {
   .legal-card { padding: 24px 22px; }
 }
+
+.legal-rule {
+  border: 0; border-top: 1px solid var(--line);
+  margin: 32px 0 4px;
+}
+
+/* square bullets, echoing the habit grid */
+ul { list-style: none; padding-left: 22px; }
+ul li { position: relative; }
+ul li::before {
+  content: ''; position: absolute;
+  left: -18px; top: 9px;
+  width: 6px; height: 6px; border-radius: 1.5px;
+  background: var(--muted);
+}
