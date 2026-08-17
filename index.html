@@ -49,7 +49,7 @@
           <h3>All your habits on one page</h2>
           <p>
             Days are rows, habits are columns, and each entry shows how that habit went.
-            </br><br>
+            <br><br>
             Scroll through days, weeks and months without opening separate habit screens. Add notes along the way and keep your whole journal together in one place.</p>
         </div>
         <div class="feature-img">
@@ -134,7 +134,7 @@ Upgrade to Pro when you want unlimited habits, a Habidays account with cloud bac
         </div>
         <div class="plan plan-pro">
           <span class="badge badge-pro">Pro</span>
-          <p class="plan-price"><span id="proPrice">149</span> kr<span class="plan-per" id="proPer"> / year</span></p>
+          <p class="plan-price"><span id="proPrice">149</span> kr<span class="plan-per" id="proPer"> / year</span><span class="save-badge card-save" id="cardSave">Save 35%</span></p>
           <p class="plan-note">Unlimited habits, cloud backup and everything Habidays has to offer.</p>
         </div>
       </div>
@@ -211,6 +211,7 @@ Upgrade to Pro when you want unlimited habits, a Habidays account with cloud bac
         document.getElementById('proPrice').textContent = prices[p];
         document.getElementById('proPer').textContent = periods[p];
         document.getElementById('freePer').textContent = periods[p];
+        document.getElementById('cardSave').style.display = p === 'yearly' ? 'inline-block' : 'none';
       });
     });
   </script>
