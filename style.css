@@ -378,3 +378,12 @@ ul li::before {
 }
 
 .hidden { display:none; }
+
+.save-badge {
+  display: inline-block; margin-left: 6px;
+  background: #E43A58; color: #FFFFFF;
+  border-radius: 999px; padding: 2px 8px;
+  font-size: 11px; font-weight: 600; letter-spacing: .2px;
+  vertical-align: middle;
+}
+.plan-btn:not(.active) .save-badge { opacity: .6; }
