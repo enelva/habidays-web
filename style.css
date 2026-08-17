@@ -388,4 +388,9 @@ ul li::before {
 }
 .plan-btn:not(.active) .save-badge { opacity: .6; }
 
-.card-save { margin-left: 10px; vertical-align: 4px; }
+.card-save {
+  margin-left: 10px;
+  vertical-align: baseline;
+  font-family: var(--sans);
+  position: relative; top: -2px;
+}
