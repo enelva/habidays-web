@@ -376,3 +376,5 @@ ul li::before {
   width: 6px; height: 6px; border-radius: 1.5px;
   background: var(--muted);
 }
+
+.hidden { display:none; }
