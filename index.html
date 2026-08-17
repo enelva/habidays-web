@@ -128,15 +128,15 @@ Upgrade to Pro when you want unlimited habits, a Habidays account with cloud bac
         <div class="plan">
           <span class="badge badge-free">Free</span>
           <p class="plan-price">0 kr<span class="plan-per"> / month</span></p>
-          <p class="plan-note">Everything you need to keep a journal.</p>
+          <p class="plan-note">Start tracking your habits locally, with no account needed.</p>
         </div>
         <div class="plan plan-pro">
           <span class="badge badge-pro">Pro</span>
-          <p class="plan-price"><span id="proPrice">YY</span> kr<span class="plan-star">*</span><span class="plan-per"> / month</span></p>
-          <p class="plan-note">Everything in Free, plus the extras above.</p>
+          <p class="plan-price"><span id="proPrice">149</span> kr<span class="plan-star hidden">*</span><span class="plan-per"> / month</span></p>
+          <p class="plan-note">Unlimited habits, cloud backup and everything Habidays has to offer.</p>
         </div>
       </div>
-      <p class="plan-foot">* Price coming soon.</p>
+      <p class="plan-foot hidden">* Price coming soon.</p>
     </section>
 
     <!-- dark CTA -->
@@ -198,7 +198,7 @@ Upgrade to Pro when you want unlimited habits, a Habidays account with cloud bac
 
   <script src="/layout.js"></script>
   <script>
-    var prices = { monthly: 'XX', yearly: 'YY' };
+    var prices = { monthly: '19', yearly: '149' };
     document.querySelectorAll('.plan-btn').forEach(function (b) {
       b.addEventListener('click', function () {
         document.querySelectorAll('.plan-btn').forEach(function (x) { x.classList.remove('active'); });
