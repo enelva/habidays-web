@@ -120,19 +120,21 @@ Upgrade to Pro when you want unlimited habits, a Habidays account with cloud bac
         <h2>Pricing</h2>
           <div class="plan-toggle">
             <button class="plan-btn" data-period="monthly">Monthly</button>
-        <button class="plan-btn active" data-period="yearly">Yearly</button>
+            <button class="plan-btn active" data-period="yearly">
+              Yearly <span class="save-badge">Save 35%</span>
+            </button>
           </div>
         </div>
 
       <div class="plans">
         <div class="plan">
           <span class="badge badge-free">Free</span>
-          <p class="plan-price">0 kr<span class="plan-per"> / month</span></p>
+          <p class="plan-price">0 kr<span class="plan-per" id="freePer"> / year</span></p>
           <p class="plan-note">Start tracking your habits locally, with no account needed.</p>
         </div>
         <div class="plan plan-pro">
           <span class="badge badge-pro">Pro</span>
-          <p class="plan-price"><span id="proPrice">149</span> kr<span class="plan-star hidden">*</span><span class="plan-per"> / month</span></p>
+          <p class="plan-price"><span id="proPrice">149</span> kr<span class="plan-per" id="proPer"> / year</span></p>
           <p class="plan-note">Unlimited habits, cloud backup and everything Habidays has to offer.</p>
         </div>
       </div>
@@ -199,11 +201,16 @@ Upgrade to Pro when you want unlimited habits, a Habidays account with cloud bac
   <script src="/layout.js"></script>
   <script>
     var prices = { monthly: '19', yearly: '149' };
+    var periods = { monthly: ' / month', yearly: ' / year' };
+
     document.querySelectorAll('.plan-btn').forEach(function (b) {
       b.addEventListener('click', function () {
+        var p = b.dataset.period;
         document.querySelectorAll('.plan-btn').forEach(function (x) { x.classList.remove('active'); });
         b.classList.add('active');
-        document.getElementById('proPrice').textContent = prices[b.dataset.period];
+        document.getElementById('proPrice').textContent = prices[p];
+        document.getElementById('proPer').textContent = periods[p];
+        document.getElementById('freePer').textContent = periods[p];
       });
     });
   </script>
