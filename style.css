@@ -390,7 +390,7 @@ ul li::before {
 
 .card-save {
   margin-left: 10px;
-  vertical-align: baseline;
+  vertical-align: -2px;
   font-family: var(--sans);
   position: relative; top: -2px;
 }
